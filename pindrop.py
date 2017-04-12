@@ -132,8 +132,7 @@ def randomly_match_cup_ball_pairs(pairs, max_range=None):
     # made into async jobs for both creation and sorting.
     for i in range(0, count):
         if max_range:
-            ball = get_random_diameter()
-            cup = get_random_diameter()
+            ball = cup = get_random_diameter()
         else:
             if len(pairs) <= 2:
                 # Edge case, when left with 2 pairs we need to be careful
